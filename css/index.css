@@ -1,0 +1,259 @@
+
+body{
+    font:14px/1.5 'microsoft yahei';
+}
+.text-right{
+    text-align: right;
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+.mr-10{
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: 'itcast';
+    src:
+    url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../fonts/MiFie-Web-Font.svg) format('svg'),
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(../fonts/MiFie-Web-Font.woff) format('woff')
+}
+.iconfont {
+    font-family: 'itcast';
+}
+.wjs-icons-mobile:before {
+    content: "\e908";
+}
+.wjs-icons-tel:before {
+    content: "\e909";
+}
+.wjs-icons-logo1:before{
+    content: '\e920';
+    font-size: 40px;
+    color: #E92322;
+}
+.wjs-icons-logo2:before{
+    content: '\e93e';
+    font-size: 36px;
+}
+.wjs-pay .wjs-icons-money:before{
+    content:"\e907";
+    font-size: 40px;
+}
+.wjs-book .wjs-icons-clock:before{
+    content: "\e906";
+}
+.wjs-book .wjs-icons-veido:before{
+    content: "\e905";
+}
+.wjs-pro .wjs-icons-ty:before{
+    content: "\e915";
+    position: absolute;
+    left: 0;
+    top:-10px;
+    font-size: 40px;
+}
+.wjs-foot .foot-icons-earth:before{
+    content: "\e90e";
+    font-size: 30px;
+}
+.wjs-foot .foot-icons-news:before{
+    content: "\e90f";
+    font-size: 30px;
+}
+.wjs-foot .foot-icons-say:before{
+    content: "\e910";
+    font-size: 30px;
+}
+.wjs-foot .foot-icons-pc:before{
+    content: "\e911";
+    font-size: 30px;
+}
+/*头部区域*/
+.wjs-header{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.wjs-header .row div[class*='col-']{
+    border-left: 1px solid #ccc;
+}
+.wjs-header .row div[class*='col-']:first-child{
+    border-left: 0;
+}
+.wjs-header .btn{
+    padding: 2px 5px;
+}
+
+/*导航区域*/
+.wjs-nav .navbar-default{
+    background: #fff;
+    height: 82px;
+}
+.wjs-nav .navbar-brand {
+    height: 80px;
+    line-height: 50px;
+}
+.wjs-nav .navbar-nav>li.active{
+    border-bottom: 2px solid #E92322;
+}
+.wjs-nav .navbar-nav>li:hover{
+    border-bottom: 2px solid #E92322;
+}
+.wjs-nav .navbar-nav>li>a {
+    height: 80px;
+    line-height: 50px;
+}
+.wjs-nav .navbar-default .navbar-nav>.active>a{
+    background-color: #fff;
+}
+.wjs-nav .navbar{
+    margin-bottom: 0;
+}
+.wjs-nav .navbar-default .navbar-collapse{
+    position: relative;
+    background: #fff;
+    z-index: 999;
+}
+/*轮播图*/
+.wjs-carousel .carousel-inner .item{
+    height: 410px;
+}
+.wjs-carousel .carousel-inner .item>img{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 410px;
+    max-width: none;
+}
+
+/*支付产品*/
+.wjs-pay{
+    padding: 50px 0;
+}
+.wjs-pay .row div[class*='col-']{
+    margin:15px 0;
+}
+/*预定样式*/
+.wjs-book {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+/*产品模块区域样式*/
+.wjs-pro {
+    padding: 50px 0;
+    background-color: #F0F0F0;
+}
+
+.wjs-pro .nav-tabs>li.active>a{
+    background: #F0F0F0;
+    border:1px solid transparent;
+    border-bottom: 2px solid #E92322;
+}
+.wjs-pro .pro-item{
+    background-color: #fff;
+    margin-top: 20px;
+    height: 160px;
+    position: relative;
+}
+.wjs-pro .pro-item.active {
+    color: #fff;
+    background-color: #E92322;
+}
+.wjs-pro .pro-item .left{
+    height: 160px;
+    margin-right: 120px;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+}
+.wjs-pro .pro-item .left h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.wjs-pro .pro-item .right {
+    width: 120px;
+    height: 160px;
+    border-left: 1px dashed #ccc;
+    position: relative;
+}
+.wjs-pro .pro-item .right:before,
+.wjs-pro .pro-item .right:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+    left:-10px;
+}
+.wjs-pro .pro-item .right:before{
+     top:-10px;
+ }
+.wjs-pro .pro-item .right:after{
+    bottom:-10px;
+}
+.wjs-pro .pro-item .right p.pro-rate{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.wjs-pro .pro-item .right p.pro-nrate{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+}
+.wjs-pro .pro-item .right span{
+    font-size: 40px;
+}
+
+/*底部样式*/
+.wjs-foot{
+    padding: 50px 0;
+    background-color: #fff;
+}
+.wjs-foot .all-news{
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #ccc;
+    position: relative;
+}
+
+.wjs-foot .all-news:after{
+    content: '';/*伪类一定不能省略这句话*/
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius:50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+}
+.wjs-foot .nav-pills>li>a {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .nav-pills>li{
+        float: left;
+        width: 25%;
+    }
+}
